@@ -1,8 +1,11 @@
 import React, {FC} from 'react';
+import {FilterValuesType} from "./App";
 
 type TodoListPropsType = {
     title: string
     tasks: Array<TasksType>
+    removeTask: (id: number) => void
+    chengeFilter: (value: FilterValuesType) => void
 }
 
 export type TasksType = {
@@ -34,6 +37,7 @@ const TodoList: FC<TodoListPropsType> = (props:TodoListPropsType) => {
                 <li>
                     <input type="checkbox" checked={task.isDone}/>
                     <span>{task.title}</span>
+                    <button onClick={()=>{props.removeTask(task.id)}}>x</button>
                 </li>
             )
         })
@@ -53,9 +57,9 @@ const TodoList: FC<TodoListPropsType> = (props:TodoListPropsType) => {
                     {tasksList}
                 </ul>
                 <div>
-                    <button>All</button>
-                    <button>Active</button>
-                    <button>Completed</button>
+                    <button onClick={()=>{props.chengeFilter("all")}}>All</button>
+                    <button onClick={()=>{props.chengeFilter("active")}}>Active</button>
+                    <button onClick={()=>{props.chengeFilter("completed")}}>Completed</button>
                 </div>
             </div>
         </div>
