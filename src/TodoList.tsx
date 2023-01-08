@@ -11,7 +11,7 @@ export type TasksType = {
     isDone: boolean
 }
 // тест
-// test
+// test1
 const TodoList: FC<TodoListPropsType> = (props:TodoListPropsType) => {
     // let tasksList;
     // if (props.tasks.length === 0){
