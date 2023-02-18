@@ -1,31 +1,24 @@
 .App {
-  padding: 30px;
-  display: flex;
+  /*padding: 30px;*/
+  /*display: flex;*/
 }
 
-.App > div {
-  margin-right: 50px;
-}
+/*.App > div {*/
+/*  margin-right: 50px;*/
+/*}*/
 
-.task-done {
-   text-decoration: line-through;
-   opacity: 0.5;
-}
+/*.error {*/
+/*  border: red 1px solid;*/
+/*}*/
 
-.task {
-    font-weight: bold;
-}
+/*.error-message {*/
+/*  color: red;*/
+/*}*/
 
-.active-Button{
-    color: white;
-    background-color: hotpink;
-    border: 2px solid hotpink;
-    border-radius: 3px;
+/*.active-filter {*/
+/*  background-color: aquamarine;*/
+/*}*/
 
-}
-
-.input-error {
-    border: 3px solid red;
-    outline: none;
-}
-
+/*.is-done {*/
+/*  opacity: 0.5;*/
+/*}*/
